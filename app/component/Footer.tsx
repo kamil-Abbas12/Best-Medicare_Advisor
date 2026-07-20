@@ -39,7 +39,7 @@ export default function Footer() {
           in a plan may be limited to certain times of the year unless you qualify for a special
           enrollment period.
         </p>
-        <p>MULTIPLAN_MEMSOC1202026_M &nbsp;&bull;&nbsp; &copy; 2026 Best Medicare Advisor. All rights reserved.</p>
+        <p> &nbsp;&bull;&nbsp; &copy; 2026 Best Medicare Advisor. All rights reserved.</p>
 
         <div className="footer-links">
           <div>

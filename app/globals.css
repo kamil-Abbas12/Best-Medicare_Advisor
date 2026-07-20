@@ -75,7 +75,7 @@ h2,
 .site-header {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
-  padding: 20px 5vw;
+  padding: 12px 5vw; /* was 20px */
   border-bottom: 1px solid var(--line);
   position: sticky;
   top: 0;
@@ -88,33 +88,22 @@ h2,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  min-height: 64px; /* keeps navbar compact */
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 1.32rem;
-  letter-spacing: -0.01em;
-}
-
-.logo-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: linear-gradient(135deg, var(--navy-800), var(--blue-600));
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 0;
   flex-shrink: 0;
 }
 
-.logo-text .accent-word {
-  color: var(--blue-600);
+.navbar-logo {
+  width: 170px; /* adjust between 150-190px as needed */
+  height: auto;
+  display: block;
 }
+
 
 .header-right {
   display: flex;
@@ -236,22 +225,31 @@ h2,
   position: relative;
   z-index: 1;
   max-width: 1180px;
+  width: 100%;
   margin: 0 auto;
   background: var(--white);
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(7, 26, 44, 0.1);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 1fr);
   border: 1px solid var(--line);
 }
 
-@media (max-width: 860px) {
+/* ONLY phones and small tablets */
+@media (max-width: 768px) {
   .hero-card {
     grid-template-columns: 1fr;
   }
-}
 
+  .hero-content {
+    padding: 32px 24px;
+  }
+
+  .quote-panel {
+    padding: 32px 24px;
+  }
+}
 .hero-content {
   padding: 54px 48px 48px;
 }
