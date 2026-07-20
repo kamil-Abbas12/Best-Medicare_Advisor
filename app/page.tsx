@@ -8,6 +8,8 @@ export default function Home() {
     <>
       <Hero />
       <div className="divider" />
+      <Carriers />
+      <div className="divider" />
       <Situations />
       <CtaBand />
     </>
