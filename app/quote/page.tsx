@@ -1,72 +1,72 @@
-import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get Your Free Medicare Quote",
+  description:
+    "You're one step away from your Medicare match. Call now to speak with a licensed insurance agent in your state.",
+};
 
 export default function QuotePage() {
   return (
-    <section className="bg-[#eef2f7]">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Left */}
-
-          <div>
-            <h1 className="text-5xl font-bold leading-tight">
-              You are in the right place for Medicare plans, let's find your
-              match!
-            </h1>
-
-            <p className="mt-8 text-xl">
-              Thank you for providing your details. You're just one step away
-              from meeting your Medicare needs today!
-            </p>
-
-            <p className="mt-6 text-lg leading-9 text-gray-800">
-              For immediate assistance, please don't hesitate to call the phone
-              numbers provided below. Our dedicated team is here to help you
-              find the coverage that suits your needs with just one call.
-              Explore exclusive plan options available in your area by speaking
-              to one of our experienced benefit advisors today.
-            </p>
-
-            <p className="mt-6 text-lg leading-9 text-gray-800">
-              Your call will be answered by an expert who will connect you with
-              the licensed insurance agent of your state.
-            </p>
-
-            <div className="mt-10 flex max-w-xl overflow-hidden rounded-lg border bg-white shadow">
-              <div className="flex-1 p-6">
-                <h2 className="text-4xl font-bold text-[#233A73]">
-                  1-844-767-6458
-                </h2>
-
-                <p className="mt-2 text-xl font-semibold">
-                  TTY: 1-877-486-2048
-                </p>
-              </div>
-
-              <div className="flex items-center border-l px-8">
-                <div>
-                  <p className="text-xl font-semibold">
-                    Mon - Fri:
-                  </p>
-
-                  <p className="text-xl font-semibold">
-                    8am - 9pm ET
-                  </p>
-                </div>
-              </div>
-            </div>
+    <section className="hero">
+      <div
+        className="hero-card"
+        style={{ gridTemplateColumns: "1fr", maxWidth: "820px" }}
+      >
+        <div className="hero-content" style={{ textAlign: "center", padding: "56px 48px" }}>
+          <div className="eyebrow" style={{ margin: "0 auto 22px" }}>
+            Free &middot; No Obligation
           </div>
 
-          {/* Right */}
+          <h1 style={{ fontSize: "2.2rem" }}>
+            You&apos;re in the right place &mdash;{" "}
+            <span className="accent">let&apos;s find your match.</span>
+          </h1>
 
-          <div>
-            <Image
-              src="/call.png"
-              alt="Advisor"
-              width={700}
-              height={800}
-              className="mx-auto"
-              priority
-            />
+          <p className="hero-sub" style={{ margin: "0 auto 32px" }}>
+            Thank you for sharing your details. You&apos;re just one call away from Medicare
+            coverage that fits your needs.
+          </p>
+
+          <p style={{ color: "var(--muted)", marginBottom: "16px", fontSize: "0.98rem" }}>
+            For immediate help, call the number below. Our team connects you with a licensed
+            insurance agent in your state who can walk through your options and answer any
+            questions, at no cost to you.
+          </p>
+
+          <p style={{ color: "var(--muted)", marginBottom: "32px", fontSize: "0.98rem" }}>
+            Your call is answered by a real person who matches you with the right local agent
+            &mdash; no automated menus to fight through.
+          </p>
+
+          <a
+            href="tel:18447676458"
+            className="call-block"
+            style={{ margin: "0 auto", display: "inline-flex" }}
+          >
+            <span className="call-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1.1L6.6 10.8Z"
+                  stroke="#fff"
+                  strokeWidth="1.8"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+            <span className="call-text">
+              <span className="call-label">Call Now</span>
+              <br />
+              <span className="call-number">1-844-767-6458</span>
+            </span>
+          </a>
+
+          <div className="no-obligation" style={{ textAlign: "center" }}>
+            No obligation to enroll.
+          </div>
+
+          <div className="tty-line" style={{ textAlign: "center" }}>
+            <strong>TTY:</strong> 1-877-486-2048 &nbsp;&bull;&nbsp; Mon&ndash;Fri, 8am&ndash;9pm ET
           </div>
         </div>
       </div>
