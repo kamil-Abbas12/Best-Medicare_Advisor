@@ -1,6 +1,8 @@
+"use client"
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 export default function HeroSection() {
+  const router = useRouter();
   return (
     <section className="w-full bg-[#eef3f8]">
       {/* Main Hero */}
@@ -38,12 +40,19 @@ export default function HeroSection() {
               </h3>
 
               <div className="mt-6 flex items-center justify-center gap-4">
-                <button className="min-w-[90px] rounded-md bg-[#233A73] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1b2d5a]">
-                  Yes
-                </button>
-                <button className="min-w-[90px] rounded-md bg-[#233A73] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#1b2d5a]">
-                  No
-                </button>
+         <button
+  onClick={() => router.push("/quote")}
+  className="min-w-[90px] rounded-md bg-[#233A73] px-6 py-3 text-sm font-semibold text-white"
+>
+  Yes
+</button>
+
+<button
+  onClick={() => router.push("/quote")}
+  className="min-w-[90px] rounded-md bg-[#233A73] px-6 py-3 text-sm font-semibold text-white"
+>
+  No
+</button>
               </div>
             </div>
           </div>
@@ -52,7 +61,7 @@ export default function HeroSection() {
         {/* Right Hero Image */}
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[50%] lg:block xl:w-[54%]">
           <Image
-            src="/hero-couple.png"
+            src="/hero.png"
             alt="Happy senior couple"
             fill
             priority
