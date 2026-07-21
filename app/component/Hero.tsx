@@ -75,7 +75,7 @@ export default function HeroSection() {
             <span className="call-text">
               <span className="call-label">Call Now</span>
               <br />
-              <span className="call-number">1 680-225-1325</span>
+              <span className="call-number">1-680-225-1325</span>
             </span>
           </a>
           <div className="no-obligation">No obligation to enroll.</div>
