@@ -19,7 +19,7 @@ export default function Navbar() {
               src="/logo.png"
               alt="Best Medicare Advisor"
               width={220}
-              height={60}
+              height={80}
               priority
               className="navbar-logo"
             />
@@ -31,8 +31,8 @@ export default function Navbar() {
               Mon&ndash;Fri: 9AM&ndash;6PM ET
             </div>
 
-            <a href="tel:18447676458" className="header-call">
-              Call 1-844-767-6458
+            <a href="tel:16802251325" className="header-call">
+              Call 1-680-225-1325
             </a>
           </div>
         </div>

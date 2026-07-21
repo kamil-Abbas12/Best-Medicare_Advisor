@@ -4,7 +4,8 @@ export default function Situations() {
       <div className="situations-inner">
         <div className="section-head">
           <div className="eyebrow">How We Help</div>
-          <h2>Whatever brought you here, we&apos;ll help you find your way.</h2>
+          <h2>No matter where you are in your search, we’re here to point you in the right direction.
+ </h2>
         </div>
 
         <div className="situation-grid">
@@ -16,7 +17,7 @@ export default function Situations() {
               </svg>
             </div>
             <h3>Turning 65</h3>
-            <p>Understand your options as you become eligible.</p>
+            <p>Understand your choices as you qualify for Medicare.</p>
           </div>
 
           <div className="situation">
@@ -31,7 +32,7 @@ export default function Situations() {
               </svg>
             </div>
             <h3>Moving</h3>
-            <p>Make sure your coverage moves with you.</p>
+            <p>Seamless coverage, no matter where you call home.</p>
           </div>
 
           <div className="situation">
@@ -46,7 +47,7 @@ export default function Situations() {
               </svg>
             </div>
             <h3>Lost Coverage</h3>
-            <p>Find a new plan quickly, with no coverage gap.</p>
+            <p>Switch plans quickly with no lapse in coverage.</p>
           </div>
 
           <div className="situation">
@@ -57,7 +58,7 @@ export default function Situations() {
               </svg>
             </div>
             <h3>Reviewing Options</h3>
-            <p>See if a better plan is available in your area.</p>
+            <p>Uncover better Medicare options in your area..</p>
           </div>
         </div>
       </div>

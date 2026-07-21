@@ -2,9 +2,9 @@ export default function CtaBand() {
   return (
     <section className="cta-band">
       <div className="cta-band-inner">
-        <h2>Ready to talk it through?</h2>
+        <h2>Prefer to talk it through?</h2>
         <p>Licensed agents are standing by. Mon&ndash;Fri: 9AM&ndash;6PM ET.</p>
-        <a href="tel:18447676458" className="call-block">
+        <a href="tel:16802251325" className="call-block">
           <span className="call-icon-wrap">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
               <path
@@ -18,7 +18,7 @@ export default function CtaBand() {
           <span className="call-text">
             <span className="call-label">Call Now</span>
             <br />
-            <span className="call-number">1-844-767-6458</span>
+            <span className="call-number">1-680-225-1325</span>
           </span>
         </a>
       </div>

@@ -23,7 +23,7 @@ export default function Footer() {
           of your options.
         </p>
         <p>
-          www.bestmedicareadvisor.com is owned and operated by Maxfort Media LLC, a non-government
+          www.bestmedicareadvisor.com is owned and operated by Top Dog Leads LLC, a non-government
           entity. This site is not maintained by, affiliated with, endorsed by, or acting on
           behalf of the U.S. Government or any of its agencies or programs.
         </p>
@@ -43,8 +43,8 @@ export default function Footer() {
 
         <div className="footer-links">
           <div>
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/terms-of-service">Terms of Service</Link>
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Terms of Service</Link>
           </div>
         </div>
       </div>

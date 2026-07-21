@@ -11,26 +11,15 @@ export default function HeroSection() {
     <section className="hero">
       <div className="hero-card">
         <div className="hero-content">
-          <Image
-            src="/logo.png"
-            alt="Best Medicare Advisor"
-            width={200}
-            height={48}
-            priority
-            className="hero-logo h-auto w-40"
-          />
 
           <div className="eyebrow">Medicare Plan Guidance</div>
 
           <h1>
-            Find the right Medicare plan for <span className="accent">any situation</span>{" "}
-            &mdash; quickly and easily.
+           Discover the perfect Medicare plan tailored to your life.
           </h1>
 
           <p className="hero-sub">
-            Whether you&apos;re turning 65, moving, lost coverage, or simply need a review of
-            your options, we&apos;ve got you covered. Speak with a licensed insurance agent
-            today.
+           Turning 65, relocating, or losing coverage? Or maybe you just want to see if you can get a better rate. Whatever your situation, we're here to help. Speak with a licensed insurance agent today.
           </p>
 
           <div className="trust-chips">
@@ -86,19 +75,17 @@ export default function HeroSection() {
             <span className="call-text">
               <span className="call-label">Call Now</span>
               <br />
-              <span className="call-number">1-844-767-6458</span>
+              <span className="call-number">1 680-225-1325</span>
             </span>
           </a>
           <div className="no-obligation">No obligation to enroll.</div>
 
-          <div className="tty-line">
-            <strong>TTY:</strong> 1-877-486-2048
-          </div>
+          
         </div>
 
         <div className="quote-panel">
-          <h2>We do the shopping.</h2>
-          <div className="tag">You do the saving.</div>
+          <h2>We handle the search. </h2>
+          <div className="tag">You enjoy the savings.</div>
 
           <div className="question-row">Do you have Medicare Part A and B?</div>
           <div className="toggle-row">
