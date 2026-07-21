@@ -57,7 +57,7 @@ export default function QuotePage() {
             <span className="call-text">
               <span className="call-label">Call Now</span>
               <br />
-              <span className="call-number">1-844-767-6458</span>
+              <span className="call-number">1-680-225-1325</span>
             </span>
           </a>
 
@@ -66,7 +66,7 @@ export default function QuotePage() {
           </div>
 
           <div className="tty-line" style={{ textAlign: "center" }}>
-            <strong>TTY:</strong> 1-877-486-2048 &nbsp;&bull;&nbsp; Mon&ndash;Fri, 8am&ndash;9pm ET
+            <strong>TTY:</strong> 1-680-225-1325 &nbsp;&bull;&nbsp; Mon&ndash;Fri, 8am&ndash;9pm ET
           </div>
         </div>
       </div>
