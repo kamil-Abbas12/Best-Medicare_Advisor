@@ -3,6 +3,7 @@ import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -68,6 +69,11 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+          <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="XLcSOVP/STzq0O1TpP4fHQ"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
