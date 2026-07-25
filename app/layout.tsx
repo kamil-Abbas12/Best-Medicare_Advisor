@@ -35,6 +35,12 @@ export const metadata: Metadata = {
     "licensed insurance agent",
     "turning 65 Medicare",
   ],
+
+  // ✅ Google Search Console Verification
+  verification: {
+    google: "tReOlbVwZIVNSvAFkxK7io3qhHuF37XhCgT2aPhcjSI",
+  },
+
   openGraph: {
     title: "Best Medicare Advisor | Find the Right Medicare Plan",
     description:
