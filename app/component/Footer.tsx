@@ -41,10 +41,10 @@ export default function Footer() {
         </p>
         <p> &nbsp;&bull;&nbsp; &copy; 2026 Best Medicare Advisor. All rights reserved.</p>
 
-        <div className="footer-links">
+       <div className="footer-links">
           <div>
-            <Link href="/">Privacy Policy</Link>
-            <Link href="/">Terms of Service</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
           </div>
         </div>
       </div>

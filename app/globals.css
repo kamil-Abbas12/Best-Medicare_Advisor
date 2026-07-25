@@ -474,6 +474,9 @@ h1 .accent {
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.01em;
+  display: inline-block; 
+  text-align: center;
+   text-decoration: none;
   cursor: pointer;
   transition: background 0.15s ease;
   font-family: var(--font-inter), sans-serif;

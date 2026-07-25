@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Get Your Free Medicare Quote",
   description:
     "You're one step away from your Medicare match. Call now to speak with a licensed insurance agent in your state.",
+  alternates: { canonical: "https://bestmedicareadvisor.com/quote" },
 };
 
 export default function QuotePage() {

@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     default: "Best Medicare Advisor | Find the Right Medicare Plan",
     template: "%s | Best Medicare Advisor",
   },
-  description:
-    "Compare Medicare Advantage, Supplement, and Part D plans from top carriers in your area. Speak with a licensed insurance agent and find the right coverage at no cost.",
+ description:
+    "Compare Medicare Advantage, Supplement, and Part D plans from top carriers. Speak with a licensed agent and find the right coverage at no cost.",
   keywords: [
     "Medicare plans",
     "Medicare Advantage",
@@ -54,9 +54,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: siteUrl,
-  },
+ 
 };
 
 export default function RootLayout({
