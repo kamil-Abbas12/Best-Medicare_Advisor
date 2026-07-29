@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -80,7 +79,7 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <Link href="/quote" className="get-quote-btn ">
+          <Link href="/quote" className="get-quote-btn">
             Get Quote
           </Link>
           <div className="savings-line">Compare plans from 5 organizations</div>

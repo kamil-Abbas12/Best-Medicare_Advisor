@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CtaBand() {
   return (
     <section className="cta-band">
@@ -21,6 +23,9 @@ export default function CtaBand() {
             <span className="call-number">1-680-225-1325</span>
           </span>
         </a>
+        <Link href="/quote" className="cta-secondary-link">
+          Or get your free quote online &rarr;
+        </Link>
       </div>
     </section>
   );
