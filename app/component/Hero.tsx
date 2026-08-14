@@ -1,9 +1,17 @@
 "use client";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function HeroSection() {
   const [hasPartAB, setHasPartAB] = useState(true);
+  const router = useRouter();
+
+  const handleGetQuote = () => {
+    if (hasPartAB) {
+      router.push("/quote");
+    }
+    // if "No" is selected, do nothing
+  };
 
   return (
     <section className="hero">
@@ -79,9 +87,9 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <Link href="/quote" className="get-quote-btn">
+          <button type="button" className="get-quote-btn" onClick={handleGetQuote}>
             Get Quote
-          </Link>
+          </button>
           <div className="savings-line">Compare plans from 5 organizations</div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import LeadForm from "../component/LeadForm";
 
 export const metadata: Metadata = {
   title: "Get Your Free Medicare Quote",
@@ -28,6 +29,10 @@ export default function QuotePage() {
             Thank you for sharing your details. You&apos;re just one call away from Medicare
             coverage that fits your needs.
           </p>
+
+          <div style={{ textAlign: "left", maxWidth: "560px", margin: "0 auto 40px" }}>
+            <LeadForm />
+          </div>
 
           <p style={{ color: "var(--muted)", marginBottom: "16px", fontSize: "0.98rem" }}>
             For immediate help, call the number below. Our team connects you with a licensed
