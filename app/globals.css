@@ -607,13 +607,17 @@ h1 .accent {
   font-size: 0.86rem;
   color: var(--muted);
 }
-
+.new-space {
+  display: inline-block;
+  margin: 0 8px;
+}
 /* Secondary CTA band */
 .cta-band {
   position: relative;
   background: linear-gradient(120deg, var(--navy-950), var(--navy-700) 85%);
   color: var(--white);
   text-align: center;
+
   padding: 66px 5vw;
   overflow: hidden;
 }
