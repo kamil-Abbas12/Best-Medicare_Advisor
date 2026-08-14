@@ -237,42 +237,9 @@ export default function LeadForm() {
         {errors.dob && <p className="field-error">{errors.dob}</p>}
       </div>
 
-      <div className="field-group">
-        <div className="question-row">Are you currently enrolled in Medicare Part A and B?*</div>
-        <div className="form-row two-col">
-          <label className={`radio-field ${form.medicarePartAB === "yes" ? "active" : ""}`}>
-            Yes
-            <input
-              type="radio"
-              name="medicarePartAB"
-              checked={form.medicarePartAB === "yes"}
-              onChange={() => update("medicarePartAB", "yes")}
-            />
-          </label>
-          <label className={`radio-field ${form.medicarePartAB === "no" ? "active" : ""}`}>
-            No
-            <input
-              type="radio"
-              name="medicarePartAB"
-              checked={form.medicarePartAB === "no"}
-              onChange={() => update("medicarePartAB", "no")}
-            />
-          </label>
-        </div>
-        {errors.medicarePartAB && <p className="field-error">{errors.medicarePartAB}</p>}
-      </div>
+     
 
-      <div className="field-group">
-        <div className={`field ${errors.preferredTime ? "invalid" : ""}`}>
-          <Clock size={16} className="field-icon" />
-          <input
-            placeholder="Preferred Time to Receive a Call*"
-            value={form.preferredTime}
-            onChange={(e) => update("preferredTime", e.target.value)}
-          />
-        </div>
-        {errors.preferredTime && <p className="field-error">{errors.preferredTime}</p>}
-      </div>
+ 
 
       <div className="field-group">
         <label className="privacy-row">

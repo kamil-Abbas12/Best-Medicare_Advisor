@@ -8,8 +8,7 @@ export interface LeadDocument {
   state: string;
   zip: string;
   dob: string;
-  medicarePartAB: "yes" | "no";
-  preferredTime: string;
+  
   submittedAt: Date;
   source: string;
   userAgent?: string;

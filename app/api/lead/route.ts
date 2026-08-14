@@ -36,10 +36,7 @@ function validate(data: Partial<LeadPayload>) {
   if (!data.zip || !/^\d{5}$/.test(data.zip)) errors.zip = "Enter a valid 5-digit ZIP code.";
   if (!data.dob) errors.dob = "Date of birth is required.";
 
-  if (data.medicarePartAB !== "yes" && data.medicarePartAB !== "no")
-    errors.medicarePartAB = "Please select yes or no.";
 
-  if (!data.preferredTime?.trim()) errors.preferredTime = "Preferred call time is required.";
   if (!data.agreedToPrivacyPolicy) errors.agreedToPrivacyPolicy = "You must agree to the privacy policy.";
 
   return errors;
@@ -74,8 +71,6 @@ export async function POST(req: NextRequest) {
     state: body.state!.trim().toUpperCase(),
     zip: body.zip!.trim(),
     dob: body.dob!,
-    medicarePartAB: body.medicarePartAB as "yes" | "no",
-    preferredTime: body.preferredTime!.trim(),
     submittedAt: new Date(),
     source: "quote-page-form",
     userAgent: req.headers.get("user-agent") ?? undefined,
