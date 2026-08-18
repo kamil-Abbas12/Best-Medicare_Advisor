@@ -679,7 +679,69 @@ h1 .accent {
 .footer-links a:hover {
   text-decoration: underline;
 }
+/* Form fields */
+.form-field {
+  margin-bottom: 18px;
+}
 
+.form-field label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: var(--font-inter), sans-serif;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--blue-500);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Autofill override (Chrome forces white bg + black text otherwise) */
+.form-field input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(11, 41, 66, 0.9) inset;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.field-error {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffb4b4;
+}
+
+.rtb-success {
+  text-align: center;
+}
+.rtb-success p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 /* Focus visibility */
 a:focus-visible,
 button:focus-visible {
