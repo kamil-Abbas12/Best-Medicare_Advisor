@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import LeadForm from "../component/LeadForm";
+import RtbLeadForm from "../component/RtbLeadForm";
 
 export const metadata: Metadata = {
   title: "Get Your Free Medicare Quote",
@@ -31,7 +32,7 @@ export default function QuotePage() {
           </p>
 
           <div style={{ textAlign: "left", maxWidth: "560px", margin: "0 auto 40px" }}>
-            <LeadForm />
+<RtbLeadForm />
           </div>
 
           <p style={{ color: "var(--muted)", marginBottom: "16px", fontSize: "0.98rem" }}>
