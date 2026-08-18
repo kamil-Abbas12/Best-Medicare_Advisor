@@ -5,8 +5,7 @@ import type { RtbLeadDocument } from "@/models/rtbLead";
 const CAMPAIGN_KEY = "2f61ccf89b595d2a4ca01896894063c4";
 const RTB_BASE_URL =
   "https://rtb.moja.cloud/inbound_rtb/inbound_rtb_1787075326026_2fc4cc6b";
-const FALLBACK_NUMBER = process.env.RTB_FALLBACK_NUMBER ?? "18447676458";
-
+const FALLBACK_NUMBER = process.env.RTB_FALLBACK_NUMBER ?? "18333507584";
 interface RtbPayload {
   phone: string;
   zip: string;

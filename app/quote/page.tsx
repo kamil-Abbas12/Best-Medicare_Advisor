@@ -47,7 +47,7 @@ export default function QuotePage() {
           </p>
 
           <a
-            href="tel:18447676458"
+            href="tel:18333507584"
             className="call-block"
             style={{ margin: "0 auto", display: "inline-flex" }}
           >
@@ -64,7 +64,7 @@ export default function QuotePage() {
             <span className="call-text">
               <span className="call-label">Call Now</span>
               <br />
-              <span className="call-number">1-680-225-1325</span>
+              <span className="call-number">1-833-350-7584</span>
             </span>
           </a>
 
@@ -73,7 +73,7 @@ export default function QuotePage() {
           </div>
 
           <div className="tty-line" style={{ textAlign: "center" }}>
-            <strong>TTY:</strong> 1-680-225-1325 &nbsp;&bull;&nbsp; Mon&ndash;Fri, 8am&ndash;9pm ET
+            <strong>TTY:</strong> 1-833-350-7584 &nbsp;&bull;&nbsp; Mon&ndash;Fri, 8am&ndash;9pm ET
           </div>
         </div>
       </div>

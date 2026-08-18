@@ -31,8 +31,8 @@ export default function Navbar() {
               Mon&ndash;Fri: 9AM&ndash;6PM ET
             </div>
 
-            <a href="tel:16802251325" className="header-call">
-              Call 1-680-225-1325
+            <a href="tel:18333507584" className="header-call">
+              Call 1-833-350-7584
             </a>
           </div>
         </div>
