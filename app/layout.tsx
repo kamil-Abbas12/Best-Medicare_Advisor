@@ -79,6 +79,21 @@ export default function RootLayout({
             gtag('config', 'G-QGDRKRZKS6');
           `}
         </Script>
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-807CYQCC8H"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-2" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-807CYQCC8H');
+          `}
+        </Script>
+
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
